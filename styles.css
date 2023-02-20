@@ -1,0 +1,32 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header:hover {
+    font-size: large;
+    color: blue;
+}
+
+.about-head:hover {
+    background-color: orange;
+}
+
+.work-head:hover {
+    background-color: orange;
+}
+
+.contact-head:hover {
+    background-color: orange;
+}
+
+.cat-container {
+    flex-direction: row;
+    height: 400px;
+    width: 500px;
+}
+
+.cat-pic {
+    margin: 10px;
+    border: 10px black;
+}
+

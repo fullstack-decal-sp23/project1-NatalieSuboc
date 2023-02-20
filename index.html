@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Natalie Suboc</title>
+    <author>Natalie Suboc</author>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div id="header">
+    <h1>Welcome to my website!</h1>
+</div>
+
+<div class="about-text">
+    <h3 class="about-head">About Me</h3>
+    <p>
+        Hello! My name is Natalie Suboc - I am a 4th year CS major and DS minor. <br>
+        Graphic design is my passion!
+    </p>
+</div>
+<div class="work-text">
+    <h3 class="work-head">Work</h3>
+    <p>
+
+    </p>
+</div>
+<div class="contact-text">
+    <h3 class="contact-head">Contact</h3>
+    <p>
+        Phone Number: [REDACTED] <br>
+        Email: nsuboc@berkeley.edu
+    </p>
+</div>
+<div class="fun-section">
+    <h4>Fun Section</h4>
+    <p>These are cats I have seen. Some are mine and some are not.</p>
+    <div class="cat-container" style="display:flex;">
+        <img class="cat-pic" src="cat1.jpg" alt="cat1"/>
+        <img class="cat-pic" src="cat2.jpg" alt="cat2"/>
+        <img class="cat-pic" src="cat3.jpg" alt="cat3"/>
+        <img class="cat-pic" src="cat4.jpg" alt="cat4"/>
+    </div>
+    <button onclick="document.querySelector('.cat-container').style.display = 'none';">Click to make the cats disappear</button>
+    <h5>Demographics Survey</h5>
+    <form>
+        <label>Name:</label>
+        <br>
+        <input type="text" id="name">
+        <br>
+        <label>Major:</label>
+        <br>
+        <input type="text" id="major">
+        <br>
+        <label>How much do you like cats?</label>
+        <br>
+        <input type="range" id="cat-range" min="1" max="10">
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</div>
+</html>
