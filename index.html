@@ -7,7 +7,7 @@
 <div id="header">
     <h1>Welcome to my website!</h1>
 </div>
-
+<h2>Hope you enjoy your stay!</h2>
 <div class="about-text">
     <h3 class="about-head">About Me</h3>
     <p>
@@ -18,7 +18,11 @@
 <div class="work-text">
     <h3 class="work-head">Work</h3>
     <p>
-
+        Listed below are some relevant projects and resume -- I am a backend software <br>
+        engineer.
+        <br>
+        <br>
+        <a href="resume.html">Resume</a>
     </p>
 </div>
 <div class="contact-text">
@@ -39,7 +43,7 @@
     </div>
     <button onclick="document.querySelector('.cat-container').style.display = 'none';">Click to make the cats disappear</button>
     <h5>Demographics Survey</h5>
-    <form>
+    <form onsubmit="handleSubmitForm()">
         <label>Name:</label>
         <br>
         <input type="text" id="name">
@@ -55,5 +59,10 @@
         <br>
         <input type="submit">
     </form>
+    <script>
+        function handleSubmitForm() {
+            alert("Form has been submitted!");
+        }
+    </script>
 </div>
 </html>
