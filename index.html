@@ -11,15 +11,18 @@
 <div class="about-text">
     <h3 class="about-head">About Me</h3>
     <p>
-        Hello! My name is Natalie Suboc - I am a 4th year CS major and DS minor. <br>
-        Graphic design is my passion!
+        Hello! My name is Natalie Suboc -- I am a 4th year CS major and DS minor. <br>
+        I enjoy walking around aimlessly for long stretches of time, trying new <br>
+        restaurants and drinking boba, and playing video games -- some current favorites <br>
+        (caveat: recency bias) are Stellaris, Minecraft, Stardew Valley, League of <br>
+        Legends, and Hades!
     </p>
 </div>
 <div class="work-text">
     <h3 class="work-head">Work</h3>
     <p>
-        Listed below are some relevant projects and resume -- I am a backend software <br>
-        engineer.
+        I'm a (soon-to-be) backend software engineer. If you're interested in the projects I've <br>
+        worked on and my technical experience, click the link below for my resume!
         <br>
         <br>
         <a href="resume.html">Resume</a>
@@ -42,19 +45,37 @@
         <img class="cat-pic" src="cat4.jpg" alt="cat4"/>
     </div>
     <button onclick="document.querySelector('.cat-container').style.display = 'none';">Click to make the cats disappear</button>
+    <h6>Click one of the squares below to find the surprise:</h6>
+    <div class="box-container" style="display:grid;">
+        <div class="box" id="surprise-box-1" onclick="onClickBox(1)">1</div>
+        <div class="box" id="surprise-box-2" onclick="onClickBox(2)">2</div>
+        <div class="box" id="surprise-box-3" onclick="onClickBox(3)">3</div>
+        <div class="box" id="surprise-box-4" onclick="onClickBox(4)">4</div>
+        <div class="box" id="surprise-box-5" onclick="onClickBox(5)">5</div>
+        <div class="box" id="surprise-box-6" onclick="onClickBox(6)">6</div>
+        <script>
+            const num = Math.floor(Math.random() * (6 - 1) + 1);
+            function onClickBox(numClicked) {
+                if (numClicked == num) {
+                    const surpriseBox = document.getElementById("surprise-box-" + num);
+                    surpriseBox.style.backgroundColor = 'red';
+                    surpriseBox.innerHTML = "Surprise!";
+                }
+            }
+        </script>
+    </div>
     <h5>Demographics Survey</h5>
     <form onsubmit="handleSubmitForm()">
-        <label>Name:</label>
-        <br>
+        <label>Name:  </label>
         <input type="text" id="name">
         <br>
-        <label>Major:</label>
         <br>
+        <label>Major:  </label>
         <input type="text" id="major">
         <br>
-        <label>How much do you like cats?</label>
         <br>
-        <input type="range" id="cat-range" min="1" max="10">
+        <label>Choose a position on the scale:  </label>
+        <input type="range" min="1" max="10">
         <br>
         <br>
         <input type="submit">

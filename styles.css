@@ -26,7 +26,18 @@
 }
 
 .cat-pic {
-    margin: 10px;
-    border: 10px black;
+    margin: 5px;
 }
 
+.box-container {
+    grid-template-columns: auto auto auto;
+}
+
+.box {
+    background-color: lightblue;
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+}
